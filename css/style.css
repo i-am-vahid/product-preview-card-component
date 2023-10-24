@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+*, *::after, *::before {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --font-Fraunces: "Fraunces", serif;
+  --font-Montserrat: "Montserrat", sans-serif;
+}
+
+main {
+  background-color: var(--Cream);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--White);
+}
+@media (min-width: 520px) {
+  .container {
+    display: flex;
+    max-width: 600px;
+  }
+}
+@media (min-width: 520px) {
+  .container__pic {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+}
+.container__pic img {
+  height: 100%;
+}
+.container__text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 520px) {
+  .container__text {
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 30px;
+  }
+}
+
+.details--head {
+  font-family: var(--font-Montserrat);
+  color: var(--Dark-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.details--titel {
+  font-family: var(--font-Fraunces);
+  font-size: 2.4rem;
+}
+.details--par {
+  font-family: var(--font-Montserrat);
+  color: var(--Dark-grayish-blue);
+}
+.details--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: var(--Dark-cyan);
+  color: white;
+  cursor: pointer;
+  font-family: var(--font-Montserrat);
+  transition: 0.3s;
+}
+.details--btn:hover {
+  background-color: hsl(158, 37%, 14%);
+}
+.details--btn img {
+  width: 20px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.price__bold {
+  color: var(--Dark-cyan);
+  font-family: var(--font-Fraunces);
+  font-size: 2rem;
+}
+.price__line {
+  text-decoration: line-through;
+  color: var(--Dark-grayish-blue);
+  font-family: var(--font-Montserrat);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.attribution a, .attribution a:visited, .attribution a:active {
+  font-family: var(--font-Montserrat);
+  color: var(--Dark-cyan);
+}/*# sourceMappingURL=style.css.map */
